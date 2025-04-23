@@ -56,12 +56,16 @@ const TableRow = ({
       <td>{name}</td>
       <td>${current_price.toLocaleString()}</td>
       <td className={price_change > 0 ? classes.success : classes.error}>
-        {price_change.toFixed(2)}
+        {price_change != null ? price_change.toFixed(2) : "N/A"}
       </td>
       <td>{total_volume.toLocaleString()}</td>
       <td>
         <img
-          src={price_change.toFixed(2) > 0 ? chartUp : chartDown}
+          src={
+            price_change != null && price_change.toFixed(2) > 0
+              ? chartUp
+              : chartDown
+          }
           alt={name}
         />
       </td>
