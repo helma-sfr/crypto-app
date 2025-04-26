@@ -6,7 +6,7 @@ import chartDown from "@/assets/chart-down.svg";
 import classes from "./TableCoin.module.css";
 
 function TableCoin({ coins, isLoading }) {
-  console.log(coins);
+  
   return (
     <div className={classes.container}>
       {isLoading ? (
