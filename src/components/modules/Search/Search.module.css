@@ -41,7 +41,7 @@
   padding: 20px;
 }
 
- ::-webkit-scrollbar {
+.searchResults::-webkit-scrollbar {
   width: 0px;
   background: transparent;
  }
